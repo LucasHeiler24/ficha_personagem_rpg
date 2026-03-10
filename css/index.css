@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    --dark: #1B3C53;
+    --cards: #234C6A;
+    --hovers: #456882;
+    --text: #E3E3E3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+main{
+    min-height: 100dvh;
+    display: flex;
+    background: var(--dark);
+    padding: 40px;
+}
+
+.section-ficha,
+.section-form{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.div-ficha{
+    width: 100%;
+    background: var(--cards);
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.div-ficha:hover{
+    background: var(--dark);
+}
+
+.div-ficha-header{
+    width: 100%;
+    height: 500px;
+}
+
+.div-ficha-header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.div-ficha-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.div-ficha-body-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    color: var(--text);
+    border-bottom: 2px solid white;
+}
+
+.div-ficha-body-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ficha-content{
+    background: var(--hovers);
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.ficha-content p{
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.ficha-status{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ficha-content-inventary{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.div-attributes{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-content-attributes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.div-content-attributes p{
+    text-align: end;
+}
+
+.section-form{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background: var(--text);
+    padding: 10px;
+}
+
+form button{
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--hovers);
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+form button:hover{
+    background: var(--cards);
+}
+
+.content-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-form h1{
+    color: white;
+}
